@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@
   font-family: 'Arial', sans-serif;
 }
 
-/* Body Styles */
 body {
   background-color: #f4f4f9;
   color: #333;
@@ -15,10 +13,9 @@ body {
   align-items: center;
   min-height: 100vh;
   text-align: center;
-  flex-direction: column; /* Ensures that the navbar and employee section stack vertically */
+  flex-direction: column; 
 }
 
-/* Navbar Styles */
 nav {
   background-color: #333;
   width: 100%;
@@ -44,7 +41,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Add space between the navbar and employee cards */
 .App {
   background-color: #fff;
   width: 100%;
@@ -52,10 +48,9 @@ nav a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 30px; /* Add margin-top to create space from the navbar */
+  margin-top: 30px;
 }
 
-/* Title Style */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -64,7 +59,6 @@ h1 {
   letter-spacing: 2px;
 }
 
-/* Form Styles */
 form {
   background-color: #f9f9f9;
   padding: 30px;
@@ -89,9 +83,8 @@ form input:focus {
   border-color: #4CAF50;
 }
 
-/* Button Styles */
 button {
-  background-color: #4CAF50; /* Vibrant green */
+  background-color: #4CAF50;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -111,10 +104,9 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Card Styling for Employee List */
 .employee-card {
   background-color: #f9f9f9;
-  margin: 15px 0; /* Adds space between employee cards */
+  margin: 15px 0;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -136,9 +128,8 @@ button:disabled {
   color: #777;
 }
 
-/* Add Button Styling */
 .add-button {
-  background-color: #007bff; /* Blue background for the Add button */
+  background-color: #007bff;
   color: white;
   font-size: 1.2rem;
   padding: 12px 20px;
@@ -149,10 +140,8 @@ button:disabled {
 }
 
 .add-button:hover {
-  background-color: #0056b3; /* Darker blue for hover effect */
+  background-color: #0056b3;
 }
-
-/* Responsive Styles */
 @media (max-width: 768px) {
   .App {
     padding: 10px;

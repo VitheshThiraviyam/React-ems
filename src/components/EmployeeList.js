@@ -8,7 +8,7 @@ function EmployeeList() {
 
   useEffect(() => {
     axios
-      .get('https://jsonplaceholder.typicode.com/users') // Fetching users as employees
+      .get('https://jsonplaceholder.typicode.com/users') 
       .then((response) => {
         setEmployees(response.data);
         setLoading(false);

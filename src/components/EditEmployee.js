@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function EditEmployee() {
   const { id } = useParams();
-  const navigate = useNavigate();  // useNavigate hook for navigation
+  const navigate = useNavigate();
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
@@ -29,7 +29,7 @@ function EditEmployee() {
     axios
       .put(`https://jsonplaceholder.typicode.com/users/${id}`, updatedEmployee)
       .then(() => {
-        navigate('/');  // Navigate to the employee list after saving changes
+        navigate('/');
       })
       .catch((error) => {
         console.error('Error updating employee:', error);

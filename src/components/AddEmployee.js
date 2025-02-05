@@ -6,7 +6,7 @@ function AddEmployee() {
   const [name, setName] = useState('');
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
-  const navigate = useNavigate();  // useNavigate hook for navigation
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,7 +15,7 @@ function AddEmployee() {
     axios
       .post('https://jsonplaceholder.typicode.com/users', newEmployee)
       .then(() => {
-        navigate('/');  // Navigate to the employee list after adding
+        navigate('/');
       })
       .catch((error) => {
         console.error('Error adding employee:', error);
